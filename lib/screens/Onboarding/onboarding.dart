@@ -57,12 +57,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         child: Column(
                           verticalDirection: VerticalDirection.down,
                           children: [
-                            const SizedBox(
-                              height: 12.0,
-                            ),
-                            const Padding(
-                              padding:
-                                  EdgeInsets.symmetric(horizontal: 24.0),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 20.0),
                               child: Text(
                                 kOnBoardingTittle,
                                 style: TextStyle(
@@ -73,11 +69,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                 textAlign: TextAlign.center,
                               ),
                             ),
-                            const SizedBox(
-                              height: 16.0,
-                            ),
+
                             const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 24),
+                              padding: EdgeInsets.only(top: 16),
                               child: Text(
                                 kOnBoardingDesc,
                                 style: TextStyle(
@@ -86,9 +80,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                 textAlign: TextAlign.center,
                               ),
                             ),
-                            const SizedBox(
-                              height: 20,
-                            ),
+                            const Spacer(),
                             DotsIndicator(
                               dotsCount: imageList.length,
                               position: index.toDouble(),
@@ -103,7 +95,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             ),
                             const Spacer(),
                             Padding(
-                              padding: const EdgeInsets.only(bottom: 10.0),
+                              padding: const EdgeInsets.only(bottom: 25.0),
                               child: AppButton(
                                 width: double.infinity,
                                 enableScaleAnimation: false,
